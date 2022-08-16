@@ -9,6 +9,7 @@ import org.testng.asserts.SoftAssert;
 import pages.HotelMyCampPage;
 import utilities.ConfigurationReader;
 import utilities.Driver;
+import utilities.ReusableMethods;
 
 import java.util.Locale;
 
@@ -27,8 +28,11 @@ public class C03__E2ETesting {
     // Hotel was inserted successfully” textinin görunduğunu test edin.
     // OK butonuna tıklayın.
 
+
     @Test
     public void createHotel(){
+
+
         HotelMyCampPage hotelMyCampPage=new HotelMyCampPage();
         hotelMyCampPage.login();
         hotelMyCampPage.wait(3);

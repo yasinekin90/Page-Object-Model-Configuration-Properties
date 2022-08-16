@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="belirkenen packageları calistirma">
+    <test name="smoke test">
+        <packages>
+            <package name="test.smoketest">
+                <exclude name="test.smoketest.PositiveLoginTest">
+
+                </exclude>
+
+            </package>
+
+            
+        </packages>
+        
+        
+    </test>
+</suite>
