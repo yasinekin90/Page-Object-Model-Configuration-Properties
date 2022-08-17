@@ -13,7 +13,6 @@ public class FaceBookPages {
 
     @FindBy(linkText = "Yeni Hesap Oluştur")
     public WebElement createAccount;
-
     @FindBy(xpath = "//input[@placeholder=\"Adın\"]")
     public WebElement nameHolder;
 
@@ -29,5 +28,17 @@ public class FaceBookPages {
     public WebElement female;
             @FindBy(xpath = "//button[text()=\"Kaydol\"]")
     public WebElement kaydol;
+
+    @FindBy(xpath = "//input[@class='inputtext _55r1 _6luy']")
+    public WebElement emailBox;
+
+    @FindBy(xpath = "//input[@class='inputtext _55r1 _6luy _9npi']")
+    public WebElement passwordBox;
+
+    @FindBy(xpath = "//button[@class='_42ft _4jy0 _6lth _4jy6 _4jy1 selected _51sy']")
+    public WebElement girisButton;
+
+    @FindBy(xpath = "//div[@class='_9ay7']")
+    public WebElement hataliGiris;
 
 }

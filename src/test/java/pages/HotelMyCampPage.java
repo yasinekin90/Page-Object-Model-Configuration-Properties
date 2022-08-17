@@ -53,6 +53,18 @@ public class HotelMyCampPage {
     @FindBy(xpath = "//button[text()=\"OK\"]")
     public WebElement okButton;
 
+    @FindBy(xpath = "//a[text()='Log in']")
+    public WebElement IlkLoginLink;
+
+    @FindBy(xpath = "//input[@class='form-control required']")
+    public WebElement usernameBox;
+
+    @FindBy(xpath = "//input[@id='Password']")
+    public WebElement passwordBox;
+
+    @FindBy(xpath = "//span[text()='ListOfUsers']")
+    public WebElement listOfUsers;
+
     public void wait(int second){
         try {
             Thread.sleep(second*1000);
