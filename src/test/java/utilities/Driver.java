@@ -18,12 +18,12 @@ public class Driver {
                 case "chrome":
                     WebDriverManager.chromedriver().setup();
                     driver=new ChromeDriver();
-                    driver.manage().window().maximize();
-                    driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
+
                     break;
                 case "firefox":
                     WebDriverManager.firefoxdriver().setup();
                     driver=new FirefoxDriver();
+
                     break;
                 case "safari":
                     WebDriverManager.safaridriver().setup();
@@ -32,6 +32,8 @@ public class Driver {
 
             }
         }
+        driver.manage().window().maximize();
+        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
         return driver;
     }
 

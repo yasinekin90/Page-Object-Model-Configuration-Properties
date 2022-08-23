@@ -1,0 +1,23 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="classlari paralel calistirma" parallel="classes" thread-count="2" verbose="3">
+    <!--
+     1.)TestNG testleri çalıstırmak kolaydır
+     2-)Ancak raporlama yapılamaz
+     3-)Eğer rapor istiyorsak ,herbir methodu yeniden dizayn etmek zorundayız
+     4-)Paralel test için de kaç browser aynı anda çalıştırmak istiyorsak onun için "thread-count" a deger veririz
+     5-)Driverlara görev verirken hangi seviyede yapacağını (paralel="package","classes","test methot" karar vermek gerekir)
+     6-)verbose da konsolda kaç satır bilginin olacağına karara verir.En az 1 en cok 10 satır bilgi verir.
+
+
+     -->
+    
+    <test name="paralel test calistirma smoke">
+        <packages>
+            <package name="test.smoketest"></package>
+        </packages>
+    </test>
+    
+</suite>
+    
+    
+    
